@@ -11,3 +11,15 @@ Fucionalidades:
 
 4. Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 */
+
+// existen tres ID a saber: 'amigo', 'listaAmigos' y 'resultado'
+
+// variables
+let amigos = [];
+
+function agregarAmigo() {
+  let amigo = document.getElementById("amigo").value;
+  amigos.push(amigo);
+  console.log(amigos);
+
+}
