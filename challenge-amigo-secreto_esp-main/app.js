@@ -19,7 +19,13 @@ let amigos = [];
 
 function agregarAmigo() {
   let amigo = document.getElementById("amigo").value;
-  amigos.push(amigo);
   console.log(amigos);
+
+  if (amigo != "") {
+    amigos.push(amigo);
+  } else {
+    alert("Por favor, ingrese un nombre válido");
+  }
+
 
 }
