@@ -39,8 +39,7 @@ function actualizarLista() {
 }
 
 function sortearAmigo() {
-  let resultado = document.getElementById("resultado");
-
+  
   if (amigos.length === 0) {
     alert("No hay amigos para sortear");
     return;
@@ -50,9 +49,7 @@ function sortearAmigo() {
   let amigoSorteado = amigos[indiceAleatorio];
   amigos.splice(indiceAleatorio, 1);
   actualizarLista();
+  alert("El amigo secreto es: " + amigoSorteado);
 
-  resultado.innerHTML = ""; 
-  let elementoResultado = document.createElement("li");
-  elementoResultado.textContent = amigoSorteado;
-  resultado.appendChild(elementoResultado);
+
 }
