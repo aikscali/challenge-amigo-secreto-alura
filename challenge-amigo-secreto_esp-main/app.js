@@ -23,9 +23,22 @@ function agregarAmigo() {
 
   if (amigo != "") {
     amigos.push(amigo);
+    actualizarLista();
+    document.getElementById("amigo").value = "";
   } else {
     alert("Por favor, ingrese un nombre válido");
   }
 
+}
 
+function actualizarLista() {
+  let listaAmigos = document.getElementById("listaAmigos");
+  listaAmigos.innerHTML = "";
+  
+  for (let i = 0; i < amigos.length; i++) {
+    let nuevoElemento = document.createElement("li");
+    nuevoElemento.textContent = amigos[i];
+    listaAmigos.appendChild(nuevoElemento);
+    
+  }
 }
