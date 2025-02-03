@@ -23,3 +23,22 @@ Validar entrada: Si el campo de texto está vacío, el programa mostrará una al
 Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 
 Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página
+
+---
+---
+# Qué me gustaría completar en un futuro
+
+## Ingresar nombre y whatsapp
+Con la adición del numero de whatsapp se podría vincular a la API de whatsapp para que se asignen los nombres sorteados a cada uno
+
+## Base de datos
+En la familia jugamos periodicamente 'amigo secreto' para evitar ingresar la información de cada miembo cada vez que se va a jugar, se podría guardar en una base de datos
+
+## Fotografía
+revisar la posibilidad de almacenar las imagenes de cada participante
+
+## Qué le gustaría recibir?
+Como parte de la dinámica, usualmente describimos que quisieramos recibir, esto se podría almacenar en la base de datos y al momento de envíar el mensaje adjuntar la lista de deseos
+
+## links de asociados
+Algunos e-commerce manejan links de asociados y otorgan descuentos por las compras de referidos, se podría revisar esta opción para asociar la lista de deseos a productos que se encuentran en algún comercio electrónico. 
