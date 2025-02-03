@@ -1,6 +1,4 @@
 /* 
-El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-
 Fucionalidades:
 
 1. Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
@@ -12,9 +10,6 @@ Fucionalidades:
 4. Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 */
 
-// existen tres ID a saber: 'amigo', 'listaAmigos' y 'resultado'
-
-// variables
 let amigos = [];
 
 function agregarAmigo() {
@@ -41,4 +36,23 @@ function actualizarLista() {
     listaAmigos.appendChild(nuevoElemento);
     
   }
+}
+
+function sortearAmigo() {
+  let resultado = document.getElementById("resultado");
+
+  if (amigos.length === 0) {
+    alert("No hay amigos para sortear");
+    return;
+  }
+
+  let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+  let amigoSorteado = amigos[indiceAleatorio];
+  amigos.splice(indiceAleatorio, 1);
+  actualizarLista();
+
+  resultado.innerHTML = ""; 
+  let elementoResultado = document.createElement("li");
+  elementoResultado.textContent = amigoSorteado;
+  resultado.appendChild(elementoResultado);
 }
